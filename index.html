@@ -1,11 +1,11 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Faisal Lab - Tools & Blogs</title>
+  <title>Faisal Lab</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -15,50 +15,59 @@
       <nav>
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
+          <li><a href="category.html">Categories</a></li>
           <li><a href="about.html">About</a></li>
-          <li class="dropdown">
-            <a href="#">Categories</a>
-            <ul class="dropdown-content">
-              <li><a href="category.html">News</a></li>
-              <li><a href="category.html">Tech</a></li>
-              <li><a href="category.html">Fashion</a></li>
-              <li><a href="category.html">Crypto</a></li>
-              <li><a href="category.html">Health</a></li>
-              <li><a href="category.html">Travel</a></li>
-            </ul>
-          </li>
         </ul>
+        <button class="menu-toggle">☰</button>
       </nav>
     </div>
   </header>
 
-  <main class="container main-content">
-    <section class="tool-grid">
-      <h2>Popular Tools</h2>
-      <div class="cards">
-        <div class="tool-card"><h3>Image Compressor</h3></div>
-        <div class="tool-card"><h3>PDF to Word</h3></div>
-        <div class="tool-card"><h3>Resume Builder</h3></div>
-        <div class="tool-card"><h3>QR Generator</h3></div>
-        <div class="tool-card"><h3>Text to Speech</h3></div>
-        <div class="tool-card"><h3>Color Picker</h3></div>
-      </div>
+  <main class="container main-grid">
+    <section class="blog-list">
+      <article class="blog-card">
+        <img src="https://via.placeholder.com/400x200" alt="Post Thumbnail" />
+        <div class="content">
+          <span class="tag">Tech</span>
+          <h2><a href="post.html">Top 5 Web Tools in 2025</a></h2>
+          <p class="date">June 26, 2025</p>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="https://via.placeholder.com/400x200" alt="Post Thumbnail" />
+        <div class="content">
+          <span class="tag">Crypto</span>
+          <h2><a href="post.html">Understanding Crypto in 2025</a></h2>
+          <p class="date">June 25, 2025</p>
+        </div>
+      </article>
     </section>
 
     <aside class="sidebar">
-      <input type="text" placeholder="Search..." class="search-box" />
+      <input type="text" class="search-box" placeholder="Search..." />
 
-      <div class="widget about-widget">
-        <h3>About Us</h3>
-        <p>Faisal Lab provides modern online tools and insightful blogs in tech, crypto, and more.</p>
+      <div class="widget about">
+        <h3>About</h3>
+        <p>Faisal Lab is a platform for tech blogs, tutorials, and latest updates in AI, crypto, and more.</p>
       </div>
 
-      <div class="widget">
+      <div class="widget recent-posts">
         <h3>Recent Posts</h3>
         <ul>
-          <li><a href="post.html">How AI Is Changing the World</a></li>
-          <li><a href="post.html">Top 5 Web Tools 2025</a></li>
-          <li><a href="post.html">Crypto Basics Explained</a></li>
+          <li>
+            <img src="https://via.placeholder.com/60" />
+            <div>
+              <a href="post.html">Top 5 AI Tools in 2025</a>
+              <p class="date">June 24, 2025</p>
+            </div>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/60" />
+            <div>
+              <a href="post.html">Why You Need a Password Manager</a>
+              <p class="date">June 22, 2025</p>
+            </div>
+          </li>
         </ul>
       </div>
     </aside>
@@ -66,21 +75,9 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Follow Us</h4>
-        <p>Twitter • Instagram • LinkedIn</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p>Email: contact@faisallab.com</p>
-      </div>
+      <div><h4>Quick Links</h4><ul><li><a href="#">About</a></li></ul></div>
+      <div><h4>Follow Us</h4><p>🐦 📸 🔗</p></div>
+      <div><h4>Contact</h4><p>contact@faisallab.com</p></div>
     </div>
   </footer>
 </body>
